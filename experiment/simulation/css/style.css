@@ -294,30 +294,51 @@ canvas {
 }
 
 table,
-tr,
 td,
+tr,
 th {
-  border-collapse: collapse;
   border: 1px solid black;
-  padding: 0.25rem;
+  border-collapse: collapse;
+  padding: 0.5rem;
 }
-.data {
-  width: 100%;
-  padding: 0.25rem;
+th {
+  background-image: linear-gradient(
+    to bottom,
+    var(--clr-side-background2),
+    var(--clr-side-background3)
+  );
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
 }
 
-tr {
+th:nth-child(2),
+td:nth-child(2) {
+  width: max-content;
+  /* padding: 0.5rem; */
+}
+tr td:nth-child(1) {
   text-align: center;
 }
-
-td:first-child,
-th:first-child {
-  padding: 0.25rem;
+tr td:nth-child(3) {
+  text-align: left;
+  border-left-width: 0;
+  padding-left: 0;
+}
+tr td:nth-child(2),
+tr th:nth-child(2) {
+  text-align: right;
+  border-right-width: 0;
+  width: 8rem;
 }
 
-.datatable p {
-  margin-bottom: 0;
+td.unit,
+th.unit {
+  /* background-color: red; */
+  border-left: 0;
+  padding-left: 0;
 }
+
 /* #canvas {
   border-left: 1px solid rgba(177, 176, 176, 0.855);
   width: 100%;
