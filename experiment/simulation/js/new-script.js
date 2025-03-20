@@ -501,38 +501,34 @@ function dispTables() {
   document.getElementById("datatable1").innerHTML =
     "<p>Open Configuration</p>\
 <table>\
-<tr><th>Angle</th><th class='data'>Value</th></tr>\
-<tr><td>&theta;<sub>2</sub>(&deg;)</td><td class='data'>" +
+<tr><th>Angle</th><th class='data'>Value</th><th class='unit'>(Unit)</th></tr>\
+<tr><td>&theta;<sub>2</sub></td><td class='data'>" +
     roundd(theta2, 2) +
-    "\
-<tr><td>&theta;<sub>3</sub>(&deg;)</td><td class='data'>" +
+    "</td><td>&deg;</td></tr><tr><td>&theta;<sub>3</sub></td><td class='data'>" +
     roundd(theta3, 2) +
-    "\
-<tr><td>&theta;<sub>4</sub>(&deg;)</td><td class='data'>" +
+    "</td><td>&deg;</td></tr><tr><td>&theta;<sub>4</sub></td><td class='data'>" +
     roundd(theta4, 2) +
-    "\
-<tr><td>&gamma;(&deg;)</td><td class='data'>" +
+    "</td><td>&deg;</td></tr><tr><td>&gamma;</td><td class='data'>" +
     roundd(gamma, 2) +
-    "\
-</table>";
+    "</td><td>&deg;</td></tr></table>";
 
   document.getElementById("datatable2").innerHTML =
     "<p>Crossed Configuration</p>\
 <table>\
-<tr><th >Angle</th><th class='data'>Value</th></tr>\
-<tr><td>&theta;<sub>2</sub>(&deg;)</td><td class='data'>" +
+<tr><th >Angle</th><th class='data'>Value</th><th class='unit'>(Unit)</th></tr>\
+<tr><td>&theta;<sub>2</sub></td><td class='data'>" +
     roundd(theta2, 2) +
     "\
-<tr><td >&theta;<sub>3</sub>(&deg;)</td><td class='data'>" +
+<td>&deg;</td></tr><tr><td >&theta;<sub>3</sub></td><td class='data'>" +
     roundd(theta3dash, 2) +
     "\
-<tr><td >&theta;<sub>4</sub>(&deg;)</td class='data'><td>" +
+<td>&deg;</td></tr><tr><td >&theta;<sub>4</sub></td class='data'><td>" +
     roundd(theta4dash, 2) +
     "\
-<tr><td >&gamma;(&deg;)</td><td class='data'>" +
+<td>&deg;</td></tr><tr><td >&gamma;</td><td class='data'>" +
     roundd(gamma, 2) +
     "\
-</table>"; // confirm why only gamma was being displayed in the flash simulation.
+<td>&deg;</td></tr></table>"; // confirm why only gamma was being displayed in the flash simulation.
 }
 // prints comments passed as 'commenttext' in location specified by 'commentloc' in the comments box;
 // 0 : Single comment box, 1 : Left comment box, 2 : Right comment box
