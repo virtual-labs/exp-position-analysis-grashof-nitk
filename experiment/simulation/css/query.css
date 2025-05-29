@@ -151,7 +151,7 @@ em:current font size
     height: 462px;
   }
 
-  .datatable {
+  /* .datatable {
     width: 140px;
     font-size: 16px;
     text-align: center;
@@ -176,7 +176,7 @@ em:current font size
   }
   #datatable2 p {
     margin-bottom: 5px;
-  }
+  } */
 
   p {
     margin-bottom: 70px;
